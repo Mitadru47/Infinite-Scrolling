@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>♾️ Scrolling</title>
+
+        <link href="./styles.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <div id="root">
+
+            <div id="header">Welcome!</div>
+            <div id="description">This is a sandbox to learn and test the concept of infinite scrolling.</div>
+
+            <div id="card-container"></div>
+        
+            <div id="index">
+
+                <div id="left-index">Pages Loaded: <span id="page-number">1</span></div>
+                <div id="right-index">Showing <span id="displayed-cards">0</span> of <span id="total-cards">0</span> Card(s)</div>
+
+            </div>
+
+            <div id="stats">
+
+                Real Time Stats..
+
+                <div id="card-container-client-height"></div>
+                <div id="card-container-offset-height"></div>
+
+                <div id="card-container-scroll-height"></div>
+
+                <div id="page-change"></div>
+
+            </div>
+
+        </div>
+
+        <script src="./main.js"></script>
+
+    </body>
+</html>

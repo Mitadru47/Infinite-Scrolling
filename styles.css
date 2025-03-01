@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+}
+
+#root{
+
+    height: 99.5vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+#header{
+    font-size: 4rem;
+}
+
+#card-container{
+
+    width: 787.5px;
+    height: 412.5px;
+
+    padding: 10px;  
+    border: 1px dashed orangered;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    scrollbar-width: thin;
+}
+
+.card{
+
+    width: 250px;
+    height: 200px;
+
+    border: 1px solid black;
+
+    line-height: 200px;
+    text-align: center;
+}
+
+.loader{
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.skeleton-card{
+
+    width: 250px;
+    height: 200px;
+
+    border: 1px solid gray;
+
+    line-height: 200px;
+    text-align: center;
+    
+    background-color: #EAEAEAEA;
+    
+    /* transition: all 200ms ease-in-out; */
+    position: relative;
+}
+
+.skeleton-card::after{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.5) 60%, rgba(255, 255, 255, 0));
+    animation: move-in-from-left 1s infinite; 
+}
+
+@keyframes move-in-from-left {
+
+    from { transform: translateX(-100%); }  
+    to { transform: translateX(100%); }  
+}  
+
+#index{
+
+    width: 795px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#stats{
+
+    width: 795px;
+    border: 1px dotted black;
+
+    padding: 10px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
